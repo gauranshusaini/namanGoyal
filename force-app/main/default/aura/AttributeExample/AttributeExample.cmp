@@ -1,0 +1,7 @@
+<aura:component>
+    <aura:attribute name="colourList" type="List" default="['red','yellow','blue','green']"/>
+	 <aura:iteration items="{!v.colourList}" var="item">
+        {!item}<br/>
+    </aura:iteration>
+
+</aura:component>

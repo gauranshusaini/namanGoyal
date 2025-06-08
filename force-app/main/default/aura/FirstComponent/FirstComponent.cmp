@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <P> I am a Garf Saini</P>
+    <p> I am a Writ</p>
+    <div>
+     <img src="C:\Users\HP\Desktop\Job project\good Morning.jpg"></img>
+    </div>
+   
+</aura:component>

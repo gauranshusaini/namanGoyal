@@ -1,0 +1,25 @@
+<apex:page controller="SecondController">
+    
+    <apex:form >
+    
+    <apex:pageBlock >
+        
+        <apex:pageBlockSection >
+        <apex:inputText value="{!SearchText}"/>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection >
+        <apex:pageBlockTable value="{!accList}" var="a">
+            <apex:column value="{!a.Name}"/>
+            <apex:column value="{!a.NumberOfEmployees}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockButtons >
+        <apex:commandButton action="{!search}" value="search the record" />
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        
+    </apex:form>
+</apex:page>

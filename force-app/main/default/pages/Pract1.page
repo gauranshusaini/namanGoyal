@@ -1,0 +1,40 @@
+<apex:page >
+    <!--
+  Apex Page is the component and every VF Page will start and end with apex:page.
+  Attributes :: 
+  1. id 
+  2. apiVersion 
+  3. showHeader
+  4.sidebar
+  5. Setup 
+  6.renderAs
+  7. standardController 
+  8. Controller 
+  9. Extensions
+
+ -->
+    <apex:form >
+    <apex:sectionHeader title="Account" subtitle="New Employee" help="/apex/VisualForce1"
+                        description="Account Information" printUrl="/apex/VisualForce1"/>
+    <apex:pageBlock title="Employee"  helpTitle="any Help??" helpUrl="/apex/VisualForce1"
+                    tabStyle="Contact" dir="LTR" rendered="true" mode="main Detail">
+        <apex:facet name="header">
+            <apex:commandButton Value="Save"/>
+        </apex:facet>
+        <apex:facet name="footer">
+            <center>
+            <h1>
+                Training@ecolabs.com
+            </h1></center>
+        </apex:facet>
+         <div>
+        Name :: Gauranshu Saini<br/><br/>
+             UserName :: {!$User.FirstName}<br/>
+        College :: G.L.Bajaj <br/><br/>
+        City :: Uttar Pradesh <br/><br/>
+    </div>
+    
+    </apex:pageBlock>
+        </apex:form>
+   
+</apex:page>

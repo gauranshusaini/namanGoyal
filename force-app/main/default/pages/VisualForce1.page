@@ -1,0 +1,36 @@
+<apex:page standardController="Account" extensions="LeadExtension" sidebar="False" renderAs="pdf">
+
+<apex:form >
+    
+    <apex:pageBlock >
+    
+        <apex:pageBlockSection >
+        
+        <apex:inputField value="{!Account.Name}"/>
+            <apex:inputField value="{!Account.NumberOfEmployees}"/>
+            <apex:inputField value="{!Account.Rating}"/>
+            <apex:inputField value="{!Account.Type}"/>
+            
+        </apex:pageBlockSection>
+    <apex:pageBlockButtons Location="Bottom">
+        
+        <apex:commandButton action="{!Save}" value="Save the record"/>
+        
+        </apex:pageBlockButtons>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock >
+    
+    <apex:pageBlockTable value="{!lList}" var="l">
+       
+        <apex:column value="{!l.Name}"/>
+        <apex:column value="{!l.Status}"/>
+        
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+    </apex:form>
+
+
+</apex:page>

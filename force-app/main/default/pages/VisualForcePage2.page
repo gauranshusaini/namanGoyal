@@ -1,0 +1,18 @@
+<apex:page standardController="Student__c" sidebar="False" >
+    
+    <apex:pageBlock title="student ViewPage">
+        
+        <apex:pageBlockSection title="Small Fields" columns="3" collapsible="true">
+         <apex:outputField value="{!Student__c.Name}"/>
+            <apex:outputField value="{!Student__c.E_mail__c}"/>
+            <apex:outputField value="{!Student__c.fees_submitted__c}"/>
+            <apex:outputField value="{!Student__c.Student_Country__c}"/>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title=" Big fields" >
+         <apex:outputField value="{!Student__c.CHEMISTRY__c}"/>
+            <apex:outputField value="{!Student__c.PHYSICS__c}"/>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

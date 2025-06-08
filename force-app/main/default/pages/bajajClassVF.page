@@ -1,0 +1,20 @@
+<apex:page controller="bajajClass" >
+    <apex:form >
+     <apex:pageBlock >
+         <apex:pageBlockButtons >
+             <apex:commandButton value="Student Info" action="{!firstMethod}" />
+              <apex:commandButton value="Bike Info" action="{!bikeInfo}" />
+         </apex:pageBlockButtons>
+         <apex:pageBlockSection title="Student Info " rendered="{!showStudentInfo}" collapsible="false">
+             Student Name :: {!name} <br/>
+             STudent Roll Number :: {!rollNo}<br/>
+         
+         </apex:pageBlockSection>
+         <apex:pageBlockSection title="Bike Info " rendered="{!showBikeInfo}"  collapsible="false">
+             Bike Name :: {!bikeName} <br/>
+             Bike Price :: {!bikePrice}<br/>
+         </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+   
+</apex:page>

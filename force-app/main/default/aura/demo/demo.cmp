@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome" >
+    <aura:attribute name="input1" type="integer" description="for first input" />
+    <aura:attribute name="input2" type="integer" description="for second input" />
+    <aura:attribute name="output" type="integer" description="for output" />
+    
+    <div class="slds-p-around_small">
+        <lightning:input type="number"  label="Please Enter a First Number" value="{!v.input1}" required="true"/>
+        <lightning:input type="number"  label="Please Enter a First Number" value="{!v.input2}" required="true" />
+        The output is :{!v.output}
+        <br/> 
+        <lightning:button variant="brand" value="component Methods" label="Add" onClick="{!c.doAdd}"/>
+        <lightning:button variant="brand" value="component Methods" label="sub" onClick="{!c.dosub}"/>
+        <lightning:button variant="brand" value="component Methods" label="Multiply" onClick="{!c.doMul}"/>
+        <lightning:button variant="brand" value="component Methods" label="Divide" onClick="{!c.doDiv}"/>
+    </div>
+</aura:component>

@@ -1,0 +1,10 @@
+<apex:page controller="bajajClass" >
+    <apex:form >
+    <apex:pageBlock title="Block1">
+        Name :: {!name}
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!firstMethod}" value="Next"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

@@ -1,0 +1,13 @@
+<apex:page controller="LeadExtension" >
+    
+    <apex:pageBlock >
+       <apex:pageBlockTable Value="{!accList}" var="a">
+           
+           <apex:column value="{!a.Name}"/>
+           <apex:column value="{!a.NumberOfEmployees}"/>
+           <apex:column value="{!a.type}"/>
+        
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+</apex:page>
